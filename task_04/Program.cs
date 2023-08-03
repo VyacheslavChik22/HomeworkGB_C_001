@@ -6,7 +6,7 @@
 Console.WriteLine("Введите целое число!");
 int introduce = int.Parse(Console.ReadLine()!);
 int number = 1;
-
+Console.Write($"Четные числа от 1 из {introduce}: ");
 
 if (introduce % 2 != 0)
 {
