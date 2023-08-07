@@ -23,8 +23,7 @@ Console.Write("Так, теперь подумаю какое из этих чи
 
 
 double max = firstNumber;
-if(firstNumber > max) max = firstNumber;
-if(seckondNumber > max) max = seckondNumber;
-if(thirdNumber > max) max = thirdNumber;
+if (seckondNumber > max) max = seckondNumber;
+if (thirdNumber > max) max = thirdNumber;
 
 Console.Write($"Ну вот, число  {max} самое большое!");
