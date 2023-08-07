@@ -6,11 +6,12 @@
 
 Console.Write("Введите целое число: ");
 int number = int.Parse(Console.ReadLine()!);
-if(number % 2 == 0)
+if (number % 2 == 0)
 {
-Console.WriteLine("Это число четное!");
+    Console.WriteLine("Это число четное!");
 }
 else
 {
-Console.WriteLine("Это число не четное!");
+    Console.WriteLine("Это число не четное!");
 }
+
