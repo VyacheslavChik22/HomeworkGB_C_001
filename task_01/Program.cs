@@ -15,10 +15,11 @@ Console.Write("Введите второе число: ");
 string? seckondString = Console.ReadLine();
 double seckondNumber = Convert.ToDouble(seckondString);
 
-if(firstNumber > seckondNumber )
+if (firstNumber > seckondNumber)
 {
     Console.WriteLine($"Первое число: {firstNumber} больше чем второе: {seckondNumber}");
-}else
+}
+else
 {
-Console.WriteLine($"Второе число: {seckondNumber} больше чем первое: {firstNumber}");
+    Console.WriteLine($"Второе число: {seckondNumber} больше чем первое: {firstNumber}");
 }
