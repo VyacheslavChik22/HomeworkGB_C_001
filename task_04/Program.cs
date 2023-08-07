@@ -3,28 +3,45 @@
 5 -> 2, 4
 8 -> 2, 4, 6, 8
 */
+// Console.WriteLine("Введите целое число!");
+// int introduce = int.Parse(Console.ReadLine()!);
+// int number = 1;
+// Console.Write($"Четные числа от 1 из {introduce}: ");
+
+// if (introduce % 2 != 0)
+// {
+//     while (number != introduce + 1)
+//     {
+//         if (number % 2 == 0) Console.Write($"{number}");
+//         if (number % 2 == 0 && number != introduce - 1) Console.Write(", ");
+
+//         number++;
+//     }
+// }
+// else
+// {
+// while (number != introduce + 1)
+//     {
+//         if (number % 2 == 0) Console.Write($"{number}");
+//         if (number % 2 == 0 && number != introduce) Console.Write(", ");
+
+//         number++;
+//     }
+// }
+
 Console.WriteLine("Введите целое число!");
 int introduce = int.Parse(Console.ReadLine()!);
 int number = 1;
 Console.Write($"Четные числа от 1 из {introduce}: ");
-
-if (introduce % 2 != 0)
+while (number <= introduce)
 {
-    while (number != introduce + 1)
+    if (number % 2 == 0)
     {
-        if (number % 2 == 0) Console.Write($"{number}");
-        if (number % 2 == 0 && number != introduce - 1) Console.Write(", ");
+        Console.Write(number);
+        if (number < introduce - 1)
+        {
+            Console.Write(", ");
+        }
 
-        number++;
     }
-}
-else
-{
-while (number != introduce + 1)
-    {
-        if (number % 2 == 0) Console.Write($"{number}");
-        if (number % 2 == 0 && number != introduce) Console.Write(", ");
-
-        number++;
-    }
-}
+    number++;
